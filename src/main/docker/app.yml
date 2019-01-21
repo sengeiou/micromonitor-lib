@@ -8,7 +8,7 @@ services:
             - EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE=http://admin:$${micromonitor.registry.password}@localhost:8761/eureka
             - SPRING_CLOUD_CONFIG_URI=http://admin:$${micromonitor.registry.password}@localhost:8761/config
             - MICROMONITOR_SLEEP=30 # gives time for the MicroMonitor Registry to boot before the application
-    micromonitor-registry:
+    microclient:
         extends:
             file: micromonitor-client.yml
             service: micromonitor

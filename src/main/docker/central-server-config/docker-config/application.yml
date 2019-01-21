@@ -13,4 +13,4 @@ micromonitor:
 eureka:
     client:
         service-url:
-            defaultZone: http://admin:${micromonitor.registry.password}@micromonitor-registry:8761/eureka/
+            defaultZone: http://admin:${micromonitor.registry.password}@microclient:8761/eureka/

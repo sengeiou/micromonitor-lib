@@ -1,7 +1,7 @@
 version: '2'
 services:
-    micromonitor-registry:
-        image: micromonitor/micromonitor-registry:v4.0.6
+    microclient:
+        image: micromonitor/microclient:v4.0.6
         volumes:
             - ./central-server-config:/central-config
         # When run with the "dev" Spring profile, the MicroMonitor Registry will
@@ -16,7 +16,7 @@ services:
             - SPRING_CLOUD_CONFIG_SERVER_COMPOSITE_0_TYPE=native
             - SPRING_CLOUD_CONFIG_SERVER_COMPOSITE_0_SEARCH_LOCATIONS=file:./central-config/localhost-config/
             # - SPRING_CLOUD_CONFIG_SERVER_COMPOSITE_0_TYPE=git
-            # - SPRING_CLOUD_CONFIG_SERVER_COMPOSITE_0_URI=https://github.com/micromonitor/micromonitor-registry/
+            # - SPRING_CLOUD_CONFIG_SERVER_COMPOSITE_0_URI=https://github.com/metao1/micromonitor/
             # - SPRING_CLOUD_CONFIG_SERVER_COMPOSITE_0_SEARCH_PATHS=central-config
         ports:
             - 8761:8761

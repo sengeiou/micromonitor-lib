@@ -17,7 +17,7 @@ logging:
     file: server.log
     level:
         ROOT: DEBUG
-        com.metao.client: DEBUG
+        de.vispiron.carsync.microclient: DEBUG
 
 eureka:
     instance:
