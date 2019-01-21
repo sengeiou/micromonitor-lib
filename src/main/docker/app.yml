@@ -8,14 +8,10 @@ services:
             - EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE=http://admin:$${micromonitor.registry.password}@localhost:8761/eureka
             - SPRING_CLOUD_CONFIG_URI=http://admin:$${micromonitor.registry.password}@localhost:8761/config
             - MICROMONITOR_SLEEP=30 # gives time for the MicroMonitor Registry to boot before the application
-    micromonitorsamplemicroservice-postgresql:
-        extends:
-            file: postgresql.yml
-            service: micromonitorsamplemicroservice-postgresql
     micromonitor-registry:
         extends:
-            file: micromonitor-registry.yml
-            service: micromonitor-registry
+            file: micromonitor-client.yml
+            service: micromonitor
         environment:
             - SPRING_CLOUD_CONFIG_SERVER_COMPOSITE_0_TYPE=native
             - SPRING_CLOUD_CONFIG_SERVER_COMPOSITE_0_SEARCH_LOCATIONS=file:./central-config/docker-config/

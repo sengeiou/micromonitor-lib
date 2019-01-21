@@ -1,6 +1,6 @@
 package com.metao.client.config;
 
-import com.metao.client.AuthoritiesConstants;
+import com.metao.client.library.AuthoritiesConstants;
 import com.metao.client.security.jwt.JWTConfigurer;
 import com.metao.client.security.jwt.TokenProvider;
 import org.springframework.context.annotation.Configuration;

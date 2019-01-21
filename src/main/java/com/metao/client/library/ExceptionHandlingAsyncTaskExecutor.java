@@ -1,4 +1,4 @@
-package com.metao.client;
+package com.metao.client.library;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

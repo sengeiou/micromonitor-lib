@@ -1,4 +1,4 @@
-package com.metao.client;
+package com.metao.client.library;
 
 import com.metao.client.security.SecurityUtils;
 import feign.RequestInterceptor;

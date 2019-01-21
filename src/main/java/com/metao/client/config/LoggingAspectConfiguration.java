@@ -1,6 +1,6 @@
 package com.metao.client.config;
 
-import com.metao.client.MicroMonitorConstants;
+import com.metao.client.library.MicroMonitorConstants;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;

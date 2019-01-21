@@ -3,7 +3,7 @@ package com.metao.client.config;
 import com.codahale.metrics.*;
 import com.codahale.metrics.health.HealthCheckRegistry;
 import com.codahale.metrics.jvm.*;
-import com.metao.client.MicroMonitorProperties;
+import com.metao.client.library.MicroMonitorProperties;
 import com.ryantenney.metrics.spring.config.annotation.EnableMetrics;
 import com.ryantenney.metrics.spring.config.annotation.MetricsConfigurerAdapter;
 import io.prometheus.client.CollectorRegistry;

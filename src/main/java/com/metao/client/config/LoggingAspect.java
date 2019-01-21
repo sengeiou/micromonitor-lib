@@ -1,6 +1,6 @@
 package com.metao.client.config;
 
-import com.metao.client.MicroMonitorConstants;
+import com.metao.client.library.MicroMonitorConstants;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.AfterThrowing;

@@ -1,4 +1,4 @@
-package com.metao.client;
+package com.metao.client.library;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.core.env.Environment;

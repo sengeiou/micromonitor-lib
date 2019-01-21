@@ -1,4 +1,4 @@
-package com.metao.client;
+package com.metao.client.library;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;

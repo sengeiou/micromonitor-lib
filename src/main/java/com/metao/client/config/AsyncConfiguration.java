@@ -1,7 +1,7 @@
 package com.metao.client.config;
 
-import com.metao.client.ExceptionHandlingAsyncTaskExecutor;
-import com.metao.client.MicroMonitorProperties;
+import com.metao.client.library.ExceptionHandlingAsyncTaskExecutor;
+import com.metao.client.library.MicroMonitorProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.aop.interceptor.AsyncUncaughtExceptionHandler;

@@ -10,7 +10,7 @@ import ch.qos.logback.core.Appender;
 import ch.qos.logback.core.filter.EvaluatorFilter;
 import ch.qos.logback.core.spi.ContextAwareBase;
 import ch.qos.logback.core.spi.FilterReply;
-import com.metao.client.MicroMonitorProperties;
+import com.metao.client.library.MicroMonitorProperties;
 import net.logstash.logback.appender.LogstashTcpSocketAppender;
 import net.logstash.logback.encoder.LogstashEncoder;
 import net.logstash.logback.stacktrace.ShortenedThrowableConverter;

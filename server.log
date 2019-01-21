@@ -1,0 +1,31 @@
+2019-01-21 15:08:10.668 DEBUG 13804 --- [main] c.m.client.config.AsyncConfiguration     : Creating Async Task Executor
+2019-01-21 15:08:11.082 DEBUG 13804 --- [main] c.m.client.config.MetricsConfiguration   : Registering JVM gauges
+2019-01-21 15:08:11.094 DEBUG 13804 --- [main] c.m.client.config.MetricsConfiguration   : Initializing Metrics JMX reporting
+2019-01-21 15:08:12.494  WARN 13804 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-01-21 15:08:13.949  INFO 13804 --- [localhost-startStop-1] com.metao.client.config.WebConfigurer    : Web application configuration, using profiles: swagger
+2019-01-21 15:08:13.951 DEBUG 13804 --- [localhost-startStop-1] com.metao.client.config.WebConfigurer    : Initializing Metrics registries
+2019-01-21 15:08:13.956 DEBUG 13804 --- [localhost-startStop-1] com.metao.client.config.WebConfigurer    : Registering Metrics Filter
+2019-01-21 15:08:13.957 DEBUG 13804 --- [localhost-startStop-1] com.metao.client.config.WebConfigurer    : Registering Metrics Servlet
+2019-01-21 15:08:13.958  INFO 13804 --- [localhost-startStop-1] com.metao.client.config.WebConfigurer    : Web application fully configured
+2019-01-21 15:08:14.047 DEBUG 13804 --- [main] c.m.client.security.jwt.TokenProvider    : Using a Base64-encoded JWT secret key
+2019-01-21 15:08:14.977  WARN 13804 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-01-21 15:08:16.558  INFO 13804 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-01-21 15:08:17.208  INFO 13804 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-01-21 15:08:17.209  INFO 13804 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-01-21 15:08:17.377  INFO 13804 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-01-21 15:08:17.377  INFO 13804 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-01-21 15:08:17.616  INFO 13804 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-21 15:08:17.763  INFO 13804 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-01-21 15:08:17.764  INFO 13804 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-01-21 15:08:17.764  INFO 13804 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-01-21 15:08:17.765  INFO 13804 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-01-21 15:08:17.765  INFO 13804 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-01-21 15:08:17.765  INFO 13804 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-01-21 15:08:17.765  INFO 13804 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-01-21 15:08:18.155  INFO 13804 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-01-21 15:08:18.159  INFO 13804 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 5
+2019-01-21 15:08:18.162  INFO 13804 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 12
+2019-01-21 15:08:18.166  INFO 13804 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1548079698165 with initial instances count: 1
+2019-01-21 15:08:18.181  INFO 13804 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1548079698181, current=UP, previous=STARTING]
+2019-01-21 15:08:18.182  INFO 13804 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROMONITORSAMPLEMICROSERVICE/micromonitorsamplemicroservice:32459e6db7efa1fd920b9af817fc3e10: registering service...
+2019-01-21 15:08:18.667  INFO 13804 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROMONITORSAMPLEMICROSERVICE/micromonitorsamplemicroservice:32459e6db7efa1fd920b9af817fc3e10 - registration status: 204

@@ -1,4 +1,4 @@
-package com.metao.client;
+package com.metao.client.library;
 
 import ch.qos.logback.classic.Logger;
 

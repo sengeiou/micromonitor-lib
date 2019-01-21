@@ -1,4 +1,4 @@
-package com.metao.client;
+package com.metao.client.library;
 
 /**
  * Constants for Spring Security authorities.

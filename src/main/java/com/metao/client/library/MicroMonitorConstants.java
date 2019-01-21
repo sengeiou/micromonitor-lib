@@ -1,4 +1,4 @@
-package com.metao.client;
+package com.metao.client.library;
 
 public interface MicroMonitorConstants {
     String SPRING_PROFILE_DEVELOPMENT = "dev";

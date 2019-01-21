@@ -1,5 +1,5 @@
 package com.metao.client.security.jwt;
-import com.metao.client.MicroMonitorProperties;
+import com.metao.client.library.MicroMonitorProperties;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;

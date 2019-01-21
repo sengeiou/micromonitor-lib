@@ -1,4 +1,4 @@
-package com.metao.client;
+package com.metao.client.library;
 
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
