@@ -31,3 +31,50 @@
 2019-01-21 15:08:18.667  INFO 13804 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_microclient/microclient:32459e6db7efa1fd920b9af817fc3e10 - registration status: 204
 2019-01-21 15:13:17.777  INFO 13804 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2019-01-21 15:18:17.794  INFO 13804 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-21 15:28:41.440 DEBUG 7756 --- [restartedMain] d.v.c.m.config.AsyncConfiguration        : Creating Async Task Executor
+2019-01-21 15:28:41.811 DEBUG 7756 --- [restartedMain] d.v.c.m.config.MetricsConfiguration      : Registering JVM gauges
+2019-01-21 15:28:41.827 DEBUG 7756 --- [restartedMain] d.v.c.m.config.MetricsConfiguration      : Initializing Metrics JMX reporting
+2019-01-21 15:28:43.051  WARN 7756 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-01-21 15:28:44.625  INFO 7756 --- [localhost-startStop-1] d.v.c.microclient.config.WebConfigurer   : Web application configuration, using profiles: swagger
+2019-01-21 15:28:44.627 DEBUG 7756 --- [localhost-startStop-1] d.v.c.microclient.config.WebConfigurer   : Initializing Metrics registries
+2019-01-21 15:28:44.630 DEBUG 7756 --- [localhost-startStop-1] d.v.c.microclient.config.WebConfigurer   : Registering Metrics Filter
+2019-01-21 15:28:44.630 DEBUG 7756 --- [localhost-startStop-1] d.v.c.microclient.config.WebConfigurer   : Registering Metrics Servlet
+2019-01-21 15:28:44.632  INFO 7756 --- [localhost-startStop-1] d.v.c.microclient.config.WebConfigurer   : Web application fully configured
+2019-01-21 15:28:44.712 DEBUG 7756 --- [restartedMain] d.v.c.m.security.jwt.TokenProvider       : Using a Base64-encoded JWT secret key
+2019-01-21 15:28:45.577  WARN 7756 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-01-21 15:28:47.193  INFO 7756 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-01-21 15:28:47.353  INFO 7756 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-01-21 15:28:47.354  INFO 7756 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-01-21 15:28:47.485  INFO 7756 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-01-21 15:28:47.486  INFO 7756 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-01-21 15:28:47.681  INFO 7756 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-01-21 15:28:47.820  INFO 7756 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-01-21 15:28:47.821  INFO 7756 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-01-21 15:28:47.821  INFO 7756 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-01-21 15:28:47.822  INFO 7756 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-01-21 15:28:47.822  INFO 7756 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-01-21 15:28:47.822  INFO 7756 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-01-21 15:28:47.822  INFO 7756 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-01-21 15:28:48.298  INFO 7756 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-01-21 15:28:48.300  INFO 7756 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 5
+2019-01-21 15:28:48.303  INFO 7756 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 12
+2019-01-21 15:28:48.307  INFO 7756 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1548080928305 with initial instances count: 0
+2019-01-21 15:28:48.319  INFO 7756 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1548080928319, current=UP, previous=STARTING]
+2019-01-21 15:28:48.320  INFO 7756 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROCLIENT/microclient:64852b3a72c5b5b98136f5d1dce4d7e5: registering service...
+2019-01-21 15:28:48.589  INFO 7756 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MICROCLIENT/microclient:64852b3a72c5b5b98136f5d1dce4d7e5 - registration status: 204
+2019-01-21 15:28:58.302  INFO 7756 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-01-21 15:28:58.303  INFO 7756 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-01-21 15:28:58.303  INFO 7756 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-01-21 15:28:58.303  INFO 7756 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-01-21 15:28:58.303  INFO 7756 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-01-21 15:28:58.303  INFO 7756 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2019-01-21 15:28:58.303  INFO 7756 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-01-21 15:28:58.404  INFO 7756 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-01-21 15:29:08.406  INFO 7756 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-01-21 15:29:08.406  INFO 7756 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-01-21 15:29:08.406  INFO 7756 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-01-21 15:29:08.406  INFO 7756 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-01-21 15:29:08.406  INFO 7756 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-01-21 15:29:08.406  INFO 7756 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2019-01-21 15:29:08.406  INFO 7756 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-01-21 15:29:08.542  INFO 7756 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
