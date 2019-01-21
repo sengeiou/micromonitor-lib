@@ -1,6 +1,9 @@
 buildscript {
     ext {
-        springBootVersion = '2.1.2.RELEASE'
+        springBootVersion = '2.0.0.RELEASE'
+        metricVersion = '3.2.6'
+        jjwtVersion = '0.10.5'
+        prometheusVersion = '0.0.26'
     }
     repositories {
         mavenCentral()
@@ -16,7 +19,7 @@ apply plugin: 'io.spring.dependency-management'
 
 group = 'com.metao.client'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '11'
+sourceCompatibility = '1.8'
 
 repositories {
     mavenCentral()
@@ -29,8 +32,17 @@ ext {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-cloud-connectors'
+    implementation 'org.springframework.security:spring-security-data:5.1.3.RELEASE'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-undertow'
+    implementation 'org.springframework.boot:spring-boot-devtools'
     implementation 'org.springframework.boot:spring-boot-starter-web-services'
+    implementation 'org.springframework.boot:spring-boot-starter-logging'
+    implementation 'org.springframework.boot:spring-boot-loader-tools'
+    implementation 'org.springframework.boot:spring-boot-configuration-processor'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-parent', version: '2.1.2.RELEASE', ext: 'pom'
+    implementation 'org.springframework.boot:spring-boot-autoconfigure'
+
     implementation 'org.springframework.cloud:spring-cloud-config-server'
     implementation 'org.springframework.cloud:spring-cloud-starter'
     implementation 'org.springframework.cloud:spring-cloud-starter-config'
@@ -38,13 +50,34 @@ dependencies {
     implementation 'org.springframework.cloud:spring-cloud-starter-oauth2'
     implementation 'org.springframework.cloud:spring-cloud-starter-open-service-broker-webmvc:2.1.0.RELEASE'
     implementation 'org.springframework.cloud:spring-cloud-starter-security'
+    implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+
     implementation 'org.springframework.data:spring-data-commons-core:1.0.0.RELEASE'
-    compile group: 'org.zalando', name: 'problem-spring-web', version: '0.24.0-RC.0'
-    compile 'io.jsonwebtoken:jjwt-api:0.10.5'
-    runtime 'io.jsonwebtoken:jjwt-impl:0.10.5',
-            'io.jsonwebtoken:jjwt-jackson:0.10.5'
+
+    implementation 'org.zalando:problem-spring-web:0.24.0-RC.0'
+
+    implementation "io.dropwizard.metrics:metrics-core:${metricVersion}"
+    implementation "io.dropwizard.metrics:metrics-annotation:${metricVersion}"
+    implementation "io.dropwizard.metrics:metrics-json:${metricVersion}"
+    implementation "io.dropwizard.metrics:metrics-servlet:${metricVersion}"
+    implementation "io.dropwizard.metrics:metrics-servlets:${metricVersion}"
+    implementation "io.dropwizard.metrics:metrics-jvm:${metricVersion}"
+
+    implementation "io.prometheus:simpleclient:${prometheusVersion}"
+    implementation "io.prometheus:simpleclient_servlet:${prometheusVersion}"
+    implementation "io.prometheus:simpleclient_dropwizard:${prometheusVersion}"
+
+    implementation 'net.logstash.logback:logstash-logback-encoder:5.2'
+
+    implementation 'com.ryantenney.metrics:metrics-spring:3.1.3'
+
+    compile "io.jsonwebtoken:jjwt-api:${jjwtVersion}"
+    runtime "io.jsonwebtoken:jjwt-impl:${jjwtVersion}",
+            "io.jsonwebtoken:jjwt-jackson:${jjwtVersion}"
     compileOnly 'org.springframework.boot:spring-boot-configuration-processor'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    
+    implementation 'com.fasterxml.jackson.module:jackson-module-afterburner:2.9.8'
 }
 
 dependencyManagement {

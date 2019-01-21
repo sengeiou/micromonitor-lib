@@ -1,0 +1,10 @@
+
+  ${AnsiColor.GREEN} ██████╗      ██╗      ███████╗  ${AnsiColor.RED}   ██████╗  ██║      ██║  ████╗  ██╗  ██████╗
+  ${AnsiColor.GREEN}██╔════╝    ██║ ██╗    ██╔═══██╗ ${AnsiColor.RED}  ██╔════╝    ██║  ██╔═╝  ██║██╗ ██║ ██╔════╝
+  ${AnsiColor.GREEN}██║        ██║   ██╗   ███████║  ${AnsiColor.RED}  ╚█████╗       ███╔═╝    ██║ ██╗██║ ██║
+  ${AnsiColor.GREEN}██║       ██║███████╗  ██╔══██║  ${AnsiColor.RED}   ╚═══██╗      ███║      ██║  ████║ ██║
+  ${AnsiColor.GREEN}╚██████╗ ██║ ═════ ██╗ ██║  ╚██╗ ${AnsiColor.RED}  ██████╔╝      ███║      ██║   ███║ ╚██████╗
+  ${AnsiColor.GREEN} ╚═════╝ ╚═╝       ╚═╝ ╚═╝   ╚═╝ ${AnsiColor.RED}  ╚═════╝       ╚══╝      ╚═╝    ╚═╝  ╚═════╝
+
+${AnsiColor.BRIGHT_BLUE}:: MicroMonitor Registry :: Running Spring Boot ${spring-boot.version} ::
+:: https://www.vispiron.de ::${AnsiColor.DEFAULT}

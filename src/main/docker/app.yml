@@ -1,14 +1,13 @@
 version: '2'
 services:
     micromonitorsamplemicroservice-app:
-        image: micromonitorsamplemicroservice
+        image: micromonitor-client
         environment:
             - _JAVA_OPTIONS=-Xmx512m -Xms256m
             - SPRING_PROFILES_ACTIVE=prod,swagger
-            - EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE=http://admin:$${micromonitor.registry.password}@micromonitor-registry:8761/eureka
-            - SPRING_CLOUD_CONFIG_URI=http://admin:$${micromonitor.registry.password}@micromonitor-registry:8761/config
-            - SPRING_DATASOURCE_URL=jdbc:postgresql://micromonitorsamplemicroservice-postgresql:5432/micromonitorSampleMicroservice
-            - JHIPSTER_SLEEP=30 # gives time for the MicroMonitor Registry to boot before the application
+            - EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE=http://admin:$${micromonitor.registry.password}@localhost:8761/eureka
+            - SPRING_CLOUD_CONFIG_URI=http://admin:$${micromonitor.registry.password}@localhost:8761/config
+            - MICROMONITOR_SLEEP=30 # gives time for the MicroMonitor Registry to boot before the application
     micromonitorsamplemicroservice-postgresql:
         extends:
             file: postgresql.yml

@@ -41,15 +41,8 @@ public class TokenProvider {
     @PostConstruct
     public void init() {
         byte[] keyBytes;
-        /*String secret = microMonitorProperties.getSecurity().getAuthentication().getJwt().getSecret();
-        if (!StringUtils.isEmpty(secret)) {
-            log.warn("Warning: the JWT key used is not Base64-encoded. " +
-                "We recommend using the `micromonitor.security.authentication.jwt.base64-secret` key for optimum security.");
-            keyBytes = secret.getBytes(StandardCharsets.UTF_8);
-        } else {*/
-            log.debug("Using a Base64-encoded JWT secret key");
-            keyBytes = Decoders.BASE64.decode(/*microMonitorProperties.getSecurity().getAuthentication().getJwt().getBase64Secret()*/"4W9YQ2ZjCPDBESsl0FdwijQ2Ifvquhmhm1hU+nCXuoBaxTs3bxcXiatnpJjAy8226K6xEWJoBlk9tYgH19d/Bg==");
-        //}
+        log.debug("Using a Base64-encoded JWT secret key");
+        keyBytes = Decoders.BASE64.decode(microMonitorProperties.getSecurity().getAuthentication().getJwt().getBase64Secret());
         this.key = Keys.hmacShaKeyFor(keyBytes);
         this.tokenValidityInMilliseconds =
             1000 * microMonitorProperties.getSecurity().getAuthentication().getJwt().getTokenValidityInSeconds();
