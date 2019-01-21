@@ -1,0 +1,16 @@
+# Common configuration shared between all applications
+configserver:
+    name: Docker MicroMonitor Registry
+    status: Connected to the MicroMonitor Registry running in Docker
+
+micromonitor:
+    security:
+        authentication:
+            secret: my-secret-key-which-should-be-changed-in-production-and-be-base64-encoded
+            base64-secret: 4W9YQ2ZjCPDBESsl0FdwijQ2Ifvquhmhm1hU+nCXuoBaxTs3bxcXiatnpJjAy8226K6xEWJoBlk9tYgH19d/Bg==
+            token-validity-in-seconds: 86400
+
+eureka:
+    client:
+        service-url:
+            defaultZone: http://admin:${micromonitor.registry.password}@micromonitor-registry:8761/eureka/
