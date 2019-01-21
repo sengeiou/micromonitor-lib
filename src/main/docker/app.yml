@@ -1,6 +1,6 @@
 version: '2'
 services:
-    micromonitorsamplemicroservice-app:
+    microclient-app:
         image: micromonitor-client
         environment:
             - _JAVA_OPTIONS=-Xmx512m -Xms256m
