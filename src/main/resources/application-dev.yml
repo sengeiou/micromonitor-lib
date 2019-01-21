@@ -16,8 +16,7 @@
 logging:
     level:
         ROOT: DEBUG
-        io.github.micromonitor: DEBUG
-        de.vispiron.carsync.client: DEBUG
+        com.metao.client: DEBUG
 
 eureka:
     instance:
@@ -107,14 +106,3 @@ micromonitor:
             host: localhost
             port: 5000
             queue-size: 512
-
-# ===================================================================
-# Application specific properties
-# Add your own application properties here, see the ApplicationProperties class
-# to have type-safe configuration, like in the MicroMonitorProperties above
-#
-# More documentation is available at:
-# https://www.micromonitor.tech/common-application-properties/
-# ===================================================================
-
-# application:
