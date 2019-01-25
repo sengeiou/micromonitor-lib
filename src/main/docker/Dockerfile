@@ -14,7 +14,7 @@ USER micromonitor
 
 ENTRYPOINT ["./entrypoint.sh"]
 
-EXPOSE 8081 5701/udp
+EXPOSE 8082 5701/udp
 
 ADD *.war app.war
 
